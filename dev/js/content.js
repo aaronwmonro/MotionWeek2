@@ -54,7 +54,7 @@ introImgTL.to("#img-1",{alpha:1})
 
 export function introImgAnimation(){
     ScrollTrigger.create({
-        markers: true,
+        // markers: true,
         animation: introImgTL,
         toggleActions: "play none reverse none",
         trigger: "#img-1",
@@ -77,7 +77,7 @@ introImgTwoTL.to("#img-2",{duration:3,alpha:1})
 
 export function introImgTwoAnimation(){
     ScrollTrigger.create({
-        markers: true,
+        // markers: true,
         animation: introImgTwoTL,
         toggleActions: "play none reverse none",
         trigger: "#img-2",
