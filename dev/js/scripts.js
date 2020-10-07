@@ -1,5 +1,5 @@
 
-import {introTextAnimation, paraTextAnimation, introImgAnimation, paraTwoTextAnimation} from "./content.js";
+import {introTextAnimation, paraTextAnimation, introImgAnimation, introImgTwoAnimation, paraTwoTextAnimation} from "./content.js";
 import {headerAnimation} from "./header.js";
 import {headerScrollAnimation} from "./headerscroll.js";
 
@@ -8,4 +8,5 @@ headerScrollAnimation();
 introTextAnimation();
 paraTextAnimation();
 introImgAnimation();
+introImgTwoAnimation();
 paraTwoTextAnimation();

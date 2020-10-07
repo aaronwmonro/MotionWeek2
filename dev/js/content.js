@@ -45,16 +45,44 @@ const introImgTL = gsap.timeline();
 
 // gsap.set("#intro",{transformOrigin: "center"});
 
-introImgTL.from("#img",{duration:3, x:-1800});
+introImgTL.to("#img-1",{alpha:1})
+            .to("#img-1",{xPercent:100})
+
+            // .to("#img-1",{duration:3, x:1800})
+            // .from("#img-2",{duration:3, x:-1800})
+            // .to("#img-2",{duration:3, x:1800});
 
 export function introImgAnimation(){
     ScrollTrigger.create({
-        // markers: true,
+        markers: true,
         animation: introImgTL,
-        // toggleActions: "play none none none",
-        trigger: "#intro",
-        start:"top, 100%",
-        end: "bottom, 40%",
+        toggleActions: "play none reverse none",
+        trigger: "#img-1",
+        start:"top, 70%",
+        end: "bottom, 0%",
+        scrub: 2
+    });
+}
+
+const introImgTwoTL = gsap.timeline();
+
+// gsap.set("#intro",{transformOrigin: "center"});
+
+introImgTwoTL.to("#img-2",{duration:3,alpha:1})
+            .to("#img-2",{duration:3, xPercent:-100})
+
+            // .to("#img-1",{duration:3, x:1800})
+            // .from("#img-2",{duration:3, x:-1800})
+            // .to("#img-2",{duration:3, x:1800});
+
+export function introImgTwoAnimation(){
+    ScrollTrigger.create({
+        markers: true,
+        animation: introImgTwoTL,
+        toggleActions: "play none reverse none",
+        trigger: "#img-2",
+        start:"top, 70%",
+        end: "bottom, 0%",
         scrub: 2
     });
 }
@@ -67,10 +95,10 @@ paraTwoTextTL.from("#second-para",{duration:3, y:500});
 
 export function paraTwoTextAnimation(){
     ScrollTrigger.create({
-        markers: true,
+        // markers: true,
         animation:  paraTwoTextTL,
         // toggleActions: "play none none none",
-        trigger: "#img",
+        trigger: "#img-2",
         start:"top, 50%",
         end: "bottom 30%",
         scrub: 2

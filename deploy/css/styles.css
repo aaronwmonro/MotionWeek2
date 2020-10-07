@@ -447,6 +447,7 @@ textarea {
 }
 #home-work-page #intro-container {
   padding: 100px 0;
+  overflow: hidden;
 }
 #home-work-page #intro-container #intro-content {
   display: flex;
@@ -470,14 +471,42 @@ textarea {
   line-height: 40px;
   width: 40vw;
 }
-#home-work-page #intro-container #intro-content img {
+#home-work-page #img-container #imgs .img {
   height: 50vh;
   width: 50vw;
   object-fit: cover;
   object-position: bottom;
   box-shadow: 0px 20px 10px #d1d1d1;
+  opacity: 0%;
 }
-#home-work-page #intro-container #intro-content #second-para {
+#home-work-page #img-container #imgs #img-2 {
+  margin-left: 50vw;
+  margin-top: 100px;
+}
+#home-work-page #second-para {
+  text-align: left;
+  width: 40vw;
+}
+#home-work-page #intro-container-2 {
+  padding: 100px 0;
+  overflow: hidden;
+}
+#home-work-page #intro-container-2 #intro-content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#home-work-page #intro-container-2 p {
+  text-align: left;
+  padding: 50px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 300;
+  line-height: 40px;
+  width: 40vw;
+}
+#home-work-page #intro-container-2 #second-para {
   text-align: left;
   width: 40vw;
 }
