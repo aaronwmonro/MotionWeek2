@@ -1,12 +1,19 @@
 
-import {introTextAnimation, paraTextAnimation, introImgAnimation, introImgTwoAnimation, paraTwoTextAnimation} from "./content.js";
-import {headerAnimation} from "./header.js";
-import {headerScrollAnimation} from "./headerscroll.js";
+import {introTextAnimation, paraTextAnimation, sideAnimation, pinAnimation, sideTwoAnimation} from "./content.js";
+import {headerAnimation, arrowAnimation} from "./header.js";
+import {headerScrollAnimation, arrowScrollAnimation} from "./headerscroll.js";
+import {headerPinAnimation} from "./headerpin.js";
 
+arrowAnimation();
 headerAnimation();
 headerScrollAnimation();
+arrowScrollAnimation();
 introTextAnimation();
 paraTextAnimation();
-introImgAnimation();
-introImgTwoAnimation();
-paraTwoTextAnimation();
+sideAnimation();
+pinAnimation();
+sideTwoAnimation();
+headerPinAnimation();
+// introImgAnimation();
+// introImgTwoAnimation();
+// paraTwoTextAnimation();

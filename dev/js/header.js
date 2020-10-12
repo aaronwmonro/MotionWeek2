@@ -4,7 +4,11 @@ import {gsap} from "gsap";
 // gsap.registerPlugin(ScrollTrigger);
 
 export function headerAnimation(){
-    gsap.from("#header-hero",{duration:2, y:1500, ease: "back"});
+    gsap.from("#header-text",{duration:2, y:1500, ease: "back"});
+}
+
+export function arrowAnimation(){
+    gsap.from("#arrow",{duration:2, y:500, ease: "back"});
 }
 // const headerScrollTL = gsap.timeline();
 
